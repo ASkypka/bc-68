@@ -2,7 +2,9 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 /* header */
 .logo {
   color: #111;
@@ -33,5 +35,63 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
+  color: #fd9222;
+}
+
+/* hero */
+.hero-cont {
+  border-radius: 30px;
+  background: rgba(17, 17, 17, 0.7);
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+.hero-btn-buy {
+  border-radius: 100px;
+  background-color: var(--orange, #fd9222);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.hero-btn-buy:hover,
+.hero-btn-buy:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+.hero-btn-hov {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+.hero-btn-hov:hover,
+.hero-btn-hov:focus {
+  border: 1px solid #fd9222;
+  color: #fd9222;
+}
+.hero-btn-scr {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero-btn-scr:hover,
+.hero-btn-scr:focus {
   color: #fd9222;
 }
