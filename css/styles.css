@@ -6,6 +6,9 @@ body{
 a{
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+}
 /* #endregion base */
 
 /* header */
@@ -38,5 +41,65 @@ a{
 
 .nav-link:hover,
 .nav-link:focus{
+    color: #FD9222;
+}
+
+.hero-container{
+    border-radius: 30px;
+    background: rgba(17, 17, 17, 0.70);
+    padding: 381px 40px 40px 40px
+}
+
+.hero-title {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+}
+
+.hero-btn-buy {
+    border-radius: 100px;
+    background: #FD9222;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    padding: 14px 40px;
+}
+
+.hero-btn-buy:hover,
+.hero-btn-buy:focus{
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+.hero-btn-how {
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 14px 40px;
+}
+
+.hero-btn-how:hover,
+.hero-btn-how:focus{
+    border: 1px solid #FD9222;
+    color: #FD9222;
+}
+
+.hero-btn-scroll {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.015em;
+}
+
+.hero-btn-scroll:hover,
+.hero-btn-scroll:focus{
     color: #FD9222;
 }
