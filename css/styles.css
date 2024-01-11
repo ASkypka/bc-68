@@ -44,6 +44,11 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+button{
+  cursor: pointer;
+}
+
 /* header */
 .header-container {
   display: flex;
@@ -100,13 +105,19 @@ img {
 }
 
 /* hero */
+.hero{
+  padding-bottom: 80px;
+}
 
 .hero-cont {
   border-radius: 30px;
   background: rgba(17, 17, 17, 0.7);
+  padding: 381px 40px 40px 40px;
 }
 
 .hero-title {
+  max-width: 484px;
+  margin-bottom: 32px;
   color: #fff;
   font-size: 28px;
   font-style: normal;
@@ -114,8 +125,25 @@ img {
   line-height: 1.21;
   letter-spacing: -0.03em;
 }
+
+.low-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.hero-list{
+  display: flex;
+  gap: 14px;
+}
+
 .hero-btn-buy {
   border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 144px;
+  min-height: 45px;
+  border: 1px solid transparent;
   background-color: var(--orange, #fd9222);
   color: #fff;
   font-family: Montserrat;
@@ -123,7 +151,6 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  cursor: pointer;
 }
 .hero-btn-buy:hover,
 .hero-btn-buy:focus {
@@ -131,6 +158,9 @@ img {
   color: #fd9222;
 }
 .hero-btn-hov {
+  min-width: 183px;
+  min-height: 45px;
+  padding: 14px 40px;
   color: #fff;
   font-family: Montserrat;
   font-size: 14px;
@@ -139,6 +169,7 @@ img {
   line-height: normal;
   border-radius: 100px;
   border: 1px solid #fff;
+  background-color: transparent;
 }
 .hero-btn-hov:hover,
 .hero-btn-hov:focus {
