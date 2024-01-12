@@ -89,7 +89,7 @@ button{
   letter-spacing: -0.02em;
   text-decoration: none;
 
-  padding: 12px 0;
+  padding: 32px 0;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -99,11 +99,26 @@ button{
   display: flex;
   gap: 14px;
 }
-.link-icon {
-  display: block;
-  padding: 20px 0;
+.item-icons {
+  width: 40px;
+  height: 40px;
 }
+.link-icon {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+border: 1px solid rgba(17, 17, 17, 0.10);
 
+}
+.link-icon:hover, .link-icon:focus {
+  border: 1px solid rgba(253, 146, 34, 0.10);
+} 
+.link-icon:hover .link-icon-svg, .link-icon:focus .link-icon-svg {
+  fill: #fd9222;
+}
 /* hero */
 .hero{
   padding-bottom: 80px;
