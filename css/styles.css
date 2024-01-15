@@ -2,9 +2,11 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -24,12 +26,14 @@ a {
   padding: 0 16px;
   margin: 0 auto;
 }
+
 ul,
 ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -39,13 +43,14 @@ h6,
 p {
   margin: 0;
 }
+
 img {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -72,10 +77,12 @@ button{
   margin-right: 90px;
   margin-left: auto;
 }
+
 .nav-list {
   display: flex;
   gap: 24px;
 }
+
 /* .nav-list-item {
   margin-right: 24px;
 } */
@@ -91,18 +98,40 @@ button{
 
   padding: 32px 0;
 }
+
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #fd9222;
+  border-radius: 2px;
+}
+
+.current {
+  position: relative;
+  color: #fd9222;
+}
+
+
 .nav-link:hover,
 .nav-link:focus {
   color: #fd9222;
 }
+
 .list-icon {
   display: flex;
   gap: 14px;
 }
+
 .item-icons {
   width: 40px;
   height: 40px;
 }
+
 .link-icon {
   display: flex;
   width: 100%;
@@ -110,17 +139,22 @@ button{
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-border: 1px solid rgba(17, 17, 17, 0.10);
+  border: 1px solid rgba(17, 17, 17, 0.10);
 
 }
-.link-icon:hover, .link-icon:focus {
+
+.link-icon:hover,
+.link-icon:focus {
   border: 1px solid rgba(253, 146, 34, 0.10);
-} 
-.link-icon:hover .link-icon-svg, .link-icon:focus .link-icon-svg {
+}
+
+.link-icon:hover .link-icon-svg,
+.link-icon:focus .link-icon-svg {
   fill: #fd9222;
 }
+
 /* hero */
-.hero{
+.hero {
   padding-bottom: 80px;
 }
 
@@ -141,14 +175,14 @@ border: 1px solid rgba(17, 17, 17, 0.10);
   letter-spacing: -0.03em;
 }
 
-.low-div{
+.low-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 }
 
-.hero-list{
+.hero-list {
   display: flex;
   gap: 14px;
 }
@@ -167,11 +201,13 @@ border: 1px solid rgba(17, 17, 17, 0.10);
   font-weight: 600;
   line-height: normal;
 }
+
 .hero-btn-buy:hover,
 .hero-btn-buy:focus {
   background-color: #fcf1e0;
   color: #fd9222;
 }
+
 .hero-btn-hov {
   min-width: 183px;
   min-height: 45px;
@@ -186,11 +222,13 @@ border: 1px solid rgba(17, 17, 17, 0.10);
   border: 1px solid #fff;
   background-color: transparent;
 }
+
 .hero-btn-hov:hover,
 .hero-btn-hov:focus {
   border: 1px solid #fd9222;
   color: #fd9222;
 }
+
 .hero-btn-scr {
   color: #fff;
   font-family: Montserrat;
@@ -199,6 +237,7 @@ border: 1px solid rgba(17, 17, 17, 0.10);
   font-weight: 600;
   line-height: normal;
 }
+
 .hero-btn-scr:hover,
 .hero-btn-scr:focus {
   color: #fd9222;
@@ -223,6 +262,18 @@ border: 1px solid rgba(17, 17, 17, 0.10);
 
 .benefits-list-item {
   width: calc((100% - 176px) / 3);
+  position: relative;
+}
+
+.benefits-list-item:not(:last-child)::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.50);
+  width: 1px;
+  height: 124px;
+  position: absolute;
+  right: -44px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .benefits-list-item-title {
