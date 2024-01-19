@@ -447,11 +447,11 @@ button {
 .form-label {
   display: block;
   margin-bottom: 8px;
-  color: rgba(64, 64, 64, 0.30);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02em;
 }
 
 .input-field-cont {
@@ -495,10 +495,10 @@ button {
   height: 137px;
   padding: 22px 24px;
   border-radius: 13px;
-border: 1.5px solid #111111;
-outline: transparent;
-background-color: transparent;
-resize: none;
+  border: 1.5px solid #111111;
+  outline: transparent;
+  background-color: transparent;
+  resize: none;
 
   font-size: 18px;
   font-weight: 400;
@@ -517,19 +517,19 @@ resize: none;
 }
 
 .label-checkbox {
-  color: rgba(64, 64, 64, 0.60);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.28px;
+  color: rgba(64, 64, 64, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
 }
 
 .custom-checkbox {
   display: inline-flex;
-    width: 20px;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
 
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
@@ -538,12 +538,12 @@ resize: none;
 }
 
 .privacy-link {
-  color: #FD9222;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.28px;
-    text-decoration-line: underline;
+  color: #fd9222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  text-decoration-line: underline;
 }
 
 .input-checkbox:checked + .label-checkbox > .custom-checkbox {
@@ -552,11 +552,11 @@ resize: none;
 }
 .form-submit-button {
   border-radius: 100px;
-    background-color: #FD9222;
-    padding: 14px 40px;
-border: none;
+  background-color: #fd9222;
+  padding: 14px 40px;
+  border: none;
 
-color: #FFF;
+  color: #fff;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -566,12 +566,12 @@ color: #FFF;
   min-width: 117px;
   min-height: 45px;
   cursor: pointer;
-  border:  1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .form-submit-button:hover,
 .form-submit-button:focus {
-  background-color: #FCF1E0;
-  color: #FD9222;
+  background-color: #fcf1e0;
+  color: #fd9222;
   border: 1px solid #111111;
 }
