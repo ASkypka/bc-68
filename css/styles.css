@@ -22,10 +22,25 @@ a {
 }
 
 .container {
-  width: 1168px;
-  padding: 0 16px;
+  outline: 1px solid red;
+  width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    width: 768px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .container {
+    width: 1168px;
+    padding: 0 16px;
+  }
+}
+
 
 ul,
 ol {
@@ -62,29 +77,76 @@ button {
 .header-container {
   display: flex;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+   .header-container{
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: normal;
+  }
 }
 
 .logo {
   color: #111;
-  font-size: 18px;
+  
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 1.28;
   letter-spacing: -0.03em;
   text-decoration: none;
+}
+@media only screen and (min-width: 1168px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 }
 
 .logo-span {
   font-style: italic;
 }
 
+.burger-icon {
+  border: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-icon {
+    display: none;
+  }
+}
 .nav {
-  margin-right: 90px;
   margin-left: auto;
+  margin-right: 28px;
+}
+@media only screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .nav {
+    margin-right: 90px;
+  }
 }
 
 .nav-list {
   display: flex;
-  gap: 24px;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 1168px) {
+  .nav-list {
+    gap: 24px;
+  }
 }
 
 /* .nav-list-item {
@@ -125,9 +187,17 @@ button {
   color: #fd9222;
 }
 
-.list-icon {
-  display: flex;
-  gap: 14px;
+@media only screen and (max-width: 767.98px) {
+  .list-icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .list-icon {
+    display: flex;
+    gap: 14px;
+  }
 }
 
 .item-icons {
